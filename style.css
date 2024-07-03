@@ -1,0 +1,248 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+
+/* main div */
+.main {
+    background-image: url('https://images.pexels.com/photos/209831/pexels-photo-209831.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
+    height: 100vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* content div */
+.sub-main {
+    position: relative;
+    z-index: 1;
+}
+
+.heading {
+    color: #211f1f;
+    text-shadow: 2px 2px #433b3b;
+    position: relative;
+}
+
+/* form input box */
+.search {
+    border-radius: 50px;
+    position: relative;
+    width: 300px;
+}
+
+.input {
+    background-color: transparent !important;
+    border: none !important;
+    font-weight: 500;
+    border-radius: 50px;
+}
+
+.search:hover {
+    border: 2px  solid rgb(21, 20, 20);
+    
+}
+/* in build focus problem */
+.input:focus{
+    outline: none;
+    background-color: transparent !important;
+    border: none !important;
+}
+
+button:focus {
+    border: none !important;
+    font-size: large;
+}
+
+/* ---------------------------- */
+/* overlay of index page */
+/* ---------------------------- */
+
+.overlay {
+    position: absolute;
+    background-image: url('https://wallpapers.com/images/featured/blank-white-background-xbsfzsltjksfompa.jpg');
+    background-color: #446262;
+    width: 692px;
+    height: 380px;
+    z-index: 0;
+    opacity: 15%;
+    padding: 0;
+    border-radius: 7px;
+}
+
+
+
+/* ======================== */
+    /* weather details */
+/* ======================== */
+
+/* overlay part  */
+
+.over {
+    position: absolute;
+}
+
+.overlay-weather1 {
+    position: absolute;
+    width: 608px;
+    height: 400px;
+    background-color: rgb(205, 185, 185);
+    opacity: 25%;
+    margin-top: 36px;
+    border-radius: 8px 0 0 8px;
+    z-index: -1;
+}
+
+.overlay-weather2{
+    position: absolute;
+    width: 435px;
+    height: 400px;
+    background-color: rgb(174, 177, 178);
+    opacity: 35%;
+    left: 608px;
+    margin-top: 36px;
+    border-radius: 0 8px 8px 0;
+    z-index: -1;
+}
+
+/* overlay part of right side */
+
+.right-overlay {
+    margin-top: 15px;
+    height: 150px;
+    position: absolute;
+    background-color: rgb(29, 20, 20);
+    opacity: 20%;
+    z-index: -1;
+    border-radius: 40px;
+}
+
+.right1 {
+    width: 135px;
+    right: 340px;
+}
+
+.right2 {
+    width: 135px;
+    right: 198px;
+}
+
+.right3 {
+    width: 135px;
+    right: 52px;
+}
+
+
+/* main div */
+.main-weather {
+    height: 100vh;
+    background-image: url('https://images.pexels.com/photos/531756/pexels-photo-531756.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'); /*https://images.pexels.com/photos/1456304/pexels-photo-1456304.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2,,,,https://images.pexels.com/photos/355465/pexels-photo-355465.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2 */
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    z-index: 0;
+}
+
+
+
+
+/* index page redirection */
+.link {
+    color: transparent;
+    margin-right: 28px;
+    /* margin-bottom: 12px; */
+    /* padding-top: 12px; */
+}
+
+ /* redirection to index page icon */
+.exit {
+    
+    /* background-color: white; */
+    font-size: 26px;
+    color: rgb(173, 210, 252);
+    margin-top: 7px;
+    
+}
+
+.exit:hover {
+    color: rgb(52, 59, 66);
+
+    background-color: rgb(226, 229, 233);
+}
+
+/* ==================== */
+/* body part */
+/* ================== */
+
+.main-body {
+    width: 100%;
+    
+}
+
+/* bootstrap problem soln , right side margin problem */
+.row {
+    --bs-gutter-x: 0 !important;
+}
+
+/* Left side  */
+/* --------------------- */
+
+.left-head {
+    color: black;
+}
+
+.left-body {
+    margin-top: 68px;
+}
+
+/* image */
+.left-cloud {
+    width: 120px;
+    height: 100%;
+}
+
+/* value degree */
+.celcius {
+    font-size: 88px;
+    color: black;
+}
+
+.left-describe {
+    font-size: 52px;
+    color: #0d0c0c;
+}
+
+/* right side */
+/* ---------------- */
+
+.greeting {
+    margin-top: -5px;
+}
+
+.time {
+    margin-top: 1px
+}
+
+.temp {
+    margin-top: -3px;
+}
+
+.desc {
+    margin-top: -4px;
+}
+
+.right-weather {
+    
+    height: 100%;
+}
+
+.pressure {
+    width: 30px;
+}
+
+.humidity {
+    width: 30px;
+}
+
