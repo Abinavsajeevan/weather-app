@@ -87,14 +87,11 @@ function loaded() {
             <a href="./index.html" class="link d-flex justify-content-end ">
                 <i class="fa-solid fa-xmark exit "></i></i>
             </a>
-            <div class="d-flex justify-content-between mx-5 over">
-                <div class="overlay-weather1 "></div>
-                <div class="overlay-weather2"></div>
-            </div>
+            
 
             <div class="row main-body px-5 pb-5 pt-2 w-100 mt-4">
                 
-                <div class="col-md-7 ">
+                <div class="col-md-7 weather">
                     <div class="left-head d-flex justify-content-between pt-4 px-4">
                         <h5>${place}, ${country}</h5>
                         <h5>${day} ${month} ${year}, ${dayname}</h5>
@@ -110,7 +107,7 @@ function loaded() {
                     </div>
                 </div>
                 <!-- -->
-                <div class="col-md-5  ">
+                <div class="col-md-5 weathers ">
                     <div class="d-flex flex-column align-items-center">
                         <img src='${src}' ${style} alt="" class="right-weather">
                         <h3 class=" greeting">${greet}</h3>
@@ -152,18 +149,19 @@ function loaded() {
             `
         })
     })
+    function getTime() {
+        // Date
+        const time = new Date()
+        let hour = time.getHours()
+        let min = time.getMinutes()
+        let sec = time.getSeconds()
+        
+        setTimeout(()=>{
+            getTime()
+        },1000)
+        document.getElementById('times').innerHTML =`${hour < 10? hour = '0' + hour: hour}:${min < 10? min = '0' + min: hour}:${sec < 10? sec = '0' + sec: sec} ${hour>=12?'PM':'AM'}`
+    }
+    getTime()
 }
-function getTime() {
-    // Date
-    const time = new Date()
-    let hour = time.getHours()
-    let min = time.getMinutes()
-    let sec = time.getSeconds()
-    
-    setTimeout(()=>{
-        getTime()
-    },1000)
-    document.getElementById('times').innerHTML =`${hour < 10? hour = '0' + hour: hour}:${min < 10? min = '0' + min: hour}:${sec < 10? sec = '0' + sec: sec} ${hour>=12?'PM':'AM'}`
-}
-getTime()
+
 

@@ -84,40 +84,21 @@ button:focus {
     position: absolute;
 }
 
-.overlay-weather1 {
-    position: absolute;
-    width: 608px;
-    height: 400px;
-    background-color: rgb(205, 185, 185);
-    opacity: 25%;
-    margin-top: 36px;
+
+.weather {
+    background-color: rgb(205, 185, 185,0.25);
     border-radius: 8px 0 0 8px;
-    z-index: -1;
 }
 
-.overlay-weather2{
-    position: absolute;
-    width: 435px;
-    height: 400px;
-    background-color: rgb(174, 177, 178);
-    opacity: 35%;
-    left: 608px;
-    margin-top: 36px;
+.weathers {
+    background-color: rgb(174, 177, 178,0.35);
     border-radius: 0 8px 8px 0;
-    z-index: -1;
 }
+
 
 /* overlay part of right side */
 
-.right-overlay {
-    margin-top: 15px;
-    height: 150px;
-    position: absolute;
-    background-color: rgb(29, 20, 20);
-    opacity: 20%;
-    z-index: -1;
-    border-radius: 40px;
-}
+
 
 .right1 {
     width: 135px;
