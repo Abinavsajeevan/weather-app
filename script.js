@@ -58,32 +58,37 @@ function loaded() {
             
             console.log(date.toLocaleDateString());
             const hour = date.getHours()
-            let weather, greet, style; 
+            let weather, greet, style, shift; 
             
 
             if(hour >= 12 &&  hour < 15) {
                 src = 'https://cdn-icons-png.flaticon.com/512/495/495976.png'
                 greet = 'Good Afternoon'
                 style = 'style="width: 48px;"'
+                shift = 'https://images.pexels.com/photos/531756/pexels-photo-531756.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'
 
             }else if(hour >= 15 &&  hour < 18) {
                 src = "https://cdn-icons-png.freepik.com/512/3236/3236899.png "
                 greet = 'Good Evening'
                 style = 'style="width: 60px;"'
+                shift = 'https://images.pexels.com/photos/1456304/pexels-photo-1456304.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2,,,,https://images.pexels.com/photos/355465/pexels-photo-355465.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'
             }else if(hour >= 15 &&  hour < 18) {
                 src = "https://www.svgrepo.com/show/285294/moon-night.svg"
                 greet = 'Good Evening'
                 style = 'style="width: 45px;"'
+                shift = 'https://images.pexels.com/photos/1456304/pexels-photo-1456304.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2,,,,https://images.pexels.com/photos/355465/pexels-photo-355465.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'
             }else {
                 src = "https://cdn-icons-png.flaticon.com/512/3892/3892988.png"
                 greet = 'Good Morning'
                 style = 'style="width: 60px;"'
+                shift = 'https://images.pexels.com/photos/531756/pexels-photo-531756.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'
+              
             }
 
 
 
             dummy.innerHTML = `
-            <div class="main-weather w-100">
+            <div class="main-weather w-100" style ="background-image: url('${shift}')">
             <a href="./index.html" class="link d-flex justify-content-end ">
                 <i class="fa-solid fa-xmark exit "></i></i>
             </a>
