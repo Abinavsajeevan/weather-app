@@ -71,12 +71,12 @@ function loaded() {
                 src = "https://cdn-icons-png.freepik.com/512/3236/3236899.png "
                 greet = 'Good Evening'
                 style = 'style="width: 60px;"'
-                shift = 'https://images.pexels.com/photos/1456304/pexels-photo-1456304.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2,,,,https://images.pexels.com/photos/355465/pexels-photo-355465.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'
+                shift = 'https://images.pexels.com/photos/1456304/pexels-photo-1456304.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'
             }else if(hour >= 15 &&  hour < 18) {
                 src = "https://www.svgrepo.com/show/285294/moon-night.svg"
                 greet = 'Good Evening'
                 style = 'style="width: 45px;"'
-                shift = 'https://images.pexels.com/photos/1456304/pexels-photo-1456304.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2,,,,https://images.pexels.com/photos/355465/pexels-photo-355465.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'
+                shift = 'https://images.pexels.com/photos/1456304/pexels-photo-1456304.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'
             }else {
                 src = "https://cdn-icons-png.flaticon.com/512/3892/3892988.png"
                 greet = 'Good Morning'
