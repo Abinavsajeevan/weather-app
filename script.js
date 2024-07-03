@@ -118,22 +118,25 @@ function loaded() {
                         <h2 class="temp"><i class="fa-solid fa-temperature-three-quarters"></i> Feels like <span class="fs-1">${temperature}<sup>°</sup>C</span></h2>
                         <h5 class="desc  ">${description}</h5>
                     </div>
-                    <div class="right-overlay right1 ms-3"></div>
-                    <div class="right-overlay right2 ms-3 "></div>
-                    <div class="right-overlay right3 ms-3 "></div>
+                    
+                    
                 <div class="row">
-                    <div class="col-md-4 p-4 mt-2">
+                    <div class='col-md-1'></div>
+
+                    <div class="col-md-3 p-4 mt-2 sg">
                         <h4 class=" d-flex fs-5 justify-content-center
                          mt-4"><i class="fa-solid fa-wind me-2"></i>Wind </h4>
                         <h4 class="d-flex justify-content-center mt-3">${wind}km/h</h4>
                     </div>
+                    <div class='col-md-1'></div>
 
-                    <div class="col-md-4 p-4 mt-2">
+                    <div class="col-md-3 p-4 mt-2 sg">
                         <h4 class="d-flex justify-content-center mt-4 fs-5"><img src="https://i.pinimg.com/originals/a5/ae/d9/a5aed9514e1cdfe272b66d21e12a1a7b.png" alt="" class="pressure">Pressure </h4>
                         <h4 class="d-flex justify-content-center">${pressure}hap</h4>
                         </div>
+                    <div class='col-md-1'></div>
 
-                    <div class="col-md-4 p-4 mt-4"> 
+                    <div class="col-md-3 p-4 mt-2 sgs"> 
                         <h4 class="d-flex justify-content-center fs-5 mt-2"><img src="https://www.svgrepo.com/show/26690/humidity.svg" alt="" class="humidity">Humidity </h4>
                         <h4 class="d-flex justify-content-center">${humidity}%</h4>
                     </div>
